@@ -5,7 +5,7 @@
 
 
 #define PI 3.14159265   
-#define RADIUS 5        // Radius of the circles (masses)
+#define RADIUS 2        // Radius of the circles (masses)
 #define N 1000          // Number of values from the text file
 #define WIDTH 680       
 #define HEIGHT 480
@@ -63,9 +63,9 @@ int main()
     /* Allegro's intitialization */
     allegro_init();
     install_keyboard();
-    set_color_depth(32);                                         // RGB mode (32 bits)  
+    set_color_depth(32);                                        // RGB mode (32 bits)  
     set_gfx_mode(GFX_AUTODETECT_WINDOWED,WIDTH,HEIGHT,0,0);
-    clear_to_color(screen, makecol(0, 0, 0));                                  // Clear to Black background
+    clear_to_color(screen, makecol(0, 0, 0));                   // Clear to Black background
     
     BITMAP *buf;                                                // Buffer used to avoid flickering on screen
     buf = create_bitmap(WIDTH, HEIGHT);
